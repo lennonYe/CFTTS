@@ -39,9 +39,12 @@
 
         <h2>Abstract</h2>
         <p>
-            This project explores various models and techniques in text-to-speech synthesis, aiming to improve 
-            the naturalness and intelligibility of generated speech. The audio samples below provide a comparison 
-            between different methods and highlight the advancements made in this area.
+            Fast and efficient text-to-speech (TTS) synthesis for device-side applications is increasingly critical, 
+            yet current models often face a trade-off between generation speed and audio quality. 
+            Although Diffusion models can produce high-quality audio, they require numerous sampling steps, 
+            which makes them less suitable for real-time applications. On the other hand, flow-matching models promise reduced sampling steps 
+            but often need more robust representation learning, which often results in suboptimal synthesis quality. 
+            Thus, We introduce ContrastiveFlowTTS (CFTTS), a novel flow-based TTS model that addresses these challenges by enhancing representation learning by integrating two self-supervised contrastive methods. Specifically, we incorporate a HuBERT-based loss to align text encoder outputs with speech representations and leverage contrastive predictive coding (CPC) to extract deep, meaningful features. Our approach achieves high-quality, low-latency speech synthesis compared to other diffusion-based TTS models.
         </p>
 
         <h2>Audio Samples</h2>
